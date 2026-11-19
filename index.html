@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🚦 Semáforo da Comunicação</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Atalho de acessibilidade para navegação por teclado -->
+  <a href="#conteudo-principal" class="pular-conteudo">Ir para o conteúdo principal</a>
+
+  <!-- Cabeçalho -->
+  <header class="cabecalho">
+    <div class="container">
+      <h1>🚦 Semáforo da Comunicação</h1>
+      <p class="subtitulo">
+        Guia visual com boas práticas, pontos de atenção e erros a evitar na comunicação em interfaces web.
+      </p>
+
+      <!-- Menu de navegação rápida entre as categorias -->
+      <nav aria-label="Categorias do semáforo">
+        <ul class="menu">
+          <li><a href="#verde" class="link-verde">🟢 Verde – Boas práticas</a></li>
+          <li><a href="#amarelo" class="link-amarelo">🟡 Amarelo – Cuidado</a></li>
+          <li><a href="#vermelho" class="link-vermelho">🔴 Vermelho – Evitar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main id="conteudo-principal" class="container">
+
+    <!-- CATEGORIA 1: VERDE (5 cards) -->
+    <section id="verde" class="secao-categoria categoria-verde" aria-labelledby="titulo-verde">
+      <h2 id="titulo-verde">🟢 VERDE – Boas práticas</h2>
+      <p class="descricao-categoria">Atitudes recomendadas que tornam a interface clara, previsível e acessível para todos.</p>
+
+      <div class="grid-cards">
+        <article class="card card-verde">
+          <span class="selo selo-verde">🟢 Boas práticas</span>
+          <h3>✅ Linguagem clara e direta</h3>
+          <p>Use frases curtas e palavras conhecidas no dia a dia para facilitar a leitura rápida.</p>
+        </article>
+
+        <article class="card card-verde">
+          <span class="selo selo-verde">🟢 Boas práticas</span>
+          <h3>✅ Títulos bem organizados</h3>
+          <p>Separe os assuntos com títulos claros para que o usuário encontre o que precisa sem esforço.</p>
+        </article>
+
+        <article class="card card-verde">
+          <span class="selo selo-verde">🟢 Boas práticas</span>
+          <h3>✅ Bom contraste de leitura</h3>
+          <p>Combine texto escuro com fundo claro suave para garantir conforto visual em qualquer tela.</p>
+        </article>
+
+        <article class="card card-verde">
+          <span class="selo selo-verde">🟢 Boas práticas</span>
+          <h3>✅ Botões com nomes claros</h3>
+          <p>Escreva exatamente o que o botão faz, como "Salvar dados" ou "Enviar atividade".</p>
+        </article>
+
+        <article class="card card-verde">
+          <span class="selo selo-verde">🟢 Boas práticas</span>
+          <h3>✅ Imagens com texto alternativo</h3>
+          <p>Descreva o conteúdo visual no atributo <code>alt</code> para ajudar quem usa leitores de tela.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CATEGORIA 2: AMARELO (5 cards) -->
+    <section id="amarelo" class="secao-categoria categoria-amarelo" aria-labelledby="titulo-amarelo">
+      <h2 id="titulo-amarelo">🟡 AMARELO – Cuidado</h2>
+      <p class="descricao-categoria">Elementos que exigem atenção para não dificultar a compreensão do usuário.</p>
+
+      <div class="grid-cards">
+        <article class="card card-amarelo">
+          <span class="selo selo-amarelo">🟡 Cuidado</span>
+          <h3>⚠️ Textos muito longos</h3>
+          <p>Parágrafos extensos cansam a leitura; sempre que possível, divida o conteúdo em tópicos curtos.</p>
+        </article>
+
+        <article class="card card-amarelo">
+          <span class="selo selo-amarelo">🟡 Cuidado</span>
+          <h3>⚠️ Siglas e termos técnicos</h3>
+          <p>Evite usar abreviações sem explicação; apresente o significado por extenso na primeira vez.</p>
+        </article>
+
+        <article class="card card-amarelo">
+          <span class="selo selo-amarelo">🟡 Cuidado</span>
+          <h3>⚠️ Links genéricos</h3>
+          <p>Tenha cuidado com links escritos apenas como "Clique aqui"; prefira indicar o destino do link.</p>
+        </article>
+
+        <article class="card card-amarelo">
+          <span class="selo selo-amarelo">🟡 Cuidado</span>
+          <h3>⚠️ Excesso de itens na tela</h3>
+          <p>Mantenha bom espaçamento entre blocos para não causar poluição ou cansaço visual.</p>
+        </article>
+
+        <article class="card card-amarelo">
+          <span class="selo selo-amarelo">🟡 Cuidado</span>
+          <h3>⚠️ Alertas visuais</h3>
+          <p>Ao destacar avisos, combine sempre a cor com um ícone e um texto objetivo explicando a situação.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CATEGORIA 3: VERMELHO (5 cards) -->
+    <section id="vermelho" class="secao-categoria categoria-vermelho" aria-labelledby="titulo-vermelho">
+      <h2 id="titulo-vermelho">🔴 VERMELHO – Evitar</h2>
+      <p class="descricao-categoria">Práticas prejudiciais que criam barreiras de acesso e devem ser evitadas.</p>
+
+      <div class="grid-cards">
+        <article class="card card-vermelho">
+          <span class="selo selo-vermelho">🔴 Evitar</span>
+          <h3>⛔ Depender somente de cores</h3>
+          <p>Nunca use apenas a cor para dar um aviso; pessoas daltônicas ou cegas precisam de texto e símbolos.</p>
+        </article>
+
+        <article class="card card-vermelho">
+          <span class="selo selo-vermelho">🔴 Evitar</span>
+          <h3>⛔ Animações e brilhos excessivos</h3>
+          <p>Elementos piscando ou se movendo sem parar causam distração e desconforto sensorial.</p>
+        </article>
+
+        <article class="card card-vermelho">
+          <span class="selo selo-vermelho">🔴 Evitar</span>
+          <h3>⛔ Baixo contraste de cores</h3>
+          <p>Evite letras claras sobre fundos claros, pois tornam a leitura difícil ou impossível.</p>
+        </article>
+
+        <article class="card card-vermelho">
+          <span class="selo selo-vermelho">🔴 Evitar</span>
+          <h3>⛔ Fontes minúsculas ou decorativas</h3>
+          <p>Letras muito pequenas ou desenhadas demais prejudicam a leitura no celular e para baixa visão.</p>
+        </article>
+
+        <article class="card card-vermelho">
+          <span class="selo selo-vermelho">🔴 Evitar</span>
+          <h3>⛔ Mudanças inesperadas na tela</h3>
+          <p>Abrir janelas ou redirecionar o usuário sem aviso quebra a previsibilidade da navegação.</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <div class="container">
+      <p>Semáforo da Comunicação — Projeto desenvolvido em HTML5 e CSS3 com foco em acessibilidade.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
