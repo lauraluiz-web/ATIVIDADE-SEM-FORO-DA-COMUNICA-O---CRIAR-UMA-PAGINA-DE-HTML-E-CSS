@@ -1,0 +1,242 @@
+/* Configurações gerais */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  background-color: #F8FAFC; /* Fundo claro suave */
+  color: #1E293B; /* Texto escuro com alto contraste */
+}
+
+/* Container centralizado */
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Atalho de acessibilidade para teclado */
+.pular-conteudo {
+  position: absolute;
+  left: -9999px;
+  background-color: #0F172A;
+  color: #FFFFFF;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.pular-conteudo:focus {
+  left: 16px;
+  top: 16px;
+  z-index: 100;
+}
+
+/* Destaque visível ao navegar com a tecla Tab */
+a:focus-visible {
+  outline: 3px solid #2563EB;
+  outline-offset: 3px;
+}
+
+/* Cabeçalho */
+.cabecalho {
+  background-color: #0F172A;
+  color: #FFFFFF;
+  padding: 36px 0;
+  border-bottom: 4px solid #334155;
+}
+
+.cabecalho h1 {
+  font-size: 2.1rem;
+  margin-bottom: 8px;
+}
+
+.cabecalho .subtitulo {
+  font-size: 1.1rem;
+  color: #E2E8F0;
+  margin-bottom: 24px;
+}
+
+/* Menu de Navegação */
+.menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.menu a {
+  display: inline-block;
+  background-color: #FFFFFF;
+  color: #0F172A;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border-left: 6px solid transparent;
+}
+
+.menu .link-verde {
+  border-left-color: #15803D;
+}
+
+.menu .link-amarelo {
+  border-left-color: #B45309;
+}
+
+.menu .link-vermelho {
+  border-left-color: #B91C1C;
+}
+
+.menu a:hover {
+  background-color: #E2E8F0;
+}
+
+/* Seções das Categorias */
+.secao-categoria {
+  background-color: #FFFFFF;
+  border: 1px solid #CBD5E1;
+  border-radius: 12px;
+  padding: 28px;
+  margin-top: 32px;
+}
+
+.secao-categoria h2 {
+  font-size: 1.55rem;
+  margin-bottom: 6px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #E2E8F0;
+}
+
+.categoria-verde h2 {
+  color: #14532D;
+}
+
+.categoria-amarelo h2 {
+  color: #78350F;
+}
+
+.categoria-vermelho h2 {
+  color: #7F1D1D;
+}
+
+.descricao-categoria {
+  margin-bottom: 22px;
+  color: #334155;
+}
+
+/* Grade de Cards (3 colunas no computador) */
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Estilo Base dos Cards */
+.card {
+  border: 1px solid #CBD5E1;
+  border-left-width: 6px;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Variação Verde */
+.card-verde {
+  background-color: #F0FDF4;
+  border-left-color: #15803D;
+}
+
+/* Variação Amarela (tom âmbar escuro para garantir alto contraste) */
+.card-amarelo {
+  background-color: #FFFBEB;
+  border-left-color: #B45309;
+}
+
+/* Variação Vermelha */
+.card-vermelho {
+  background-color: #FEF2F2;
+  border-left-color: #B91C1C;
+}
+
+/* Selo textual + símbolo dentro de cada card */
+.selo {
+  align-self: flex-start;
+  font-size: 0.85rem;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.selo-verde {
+  background-color: #DCFCE7;
+  color: #14532D;
+}
+
+.selo-amarelo {
+  background-color: #FEF3C7;
+  color: #78350F;
+}
+
+.selo-vermelho {
+  background-color: #FEE2E2;
+  color: #7F1D1D;
+}
+
+.card h3 {
+  font-size: 1.15rem;
+  color: #0F172A;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #1E293B;
+}
+
+/* Rodapé */
+.rodape {
+  background-color: #E2E8F0;
+  color: #334155;
+  text-align: center;
+  padding: 24px 0;
+  font-size: 0.95rem;
+  margin-top: 40px;
+}
+
+/* Responsividade para Tablets */
+@media (max-width: 900px) {
+  .grid-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsividade para Celulares */
+@media (max-width: 600px) {
+  .cabecalho h1 {
+    font-size: 1.65rem;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .menu a {
+    width: 100%;
+  }
+
+  .secao-categoria {
+    padding: 20px;
+  }
+
+  .grid-cards {
+    grid-template-columns: 1fr;
+  }
+}
